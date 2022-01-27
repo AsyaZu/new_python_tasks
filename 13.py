@@ -1,11 +1,10 @@
 # Пользователь задаёт две строки. Определить количество количество вхождений одной строки в другой.
-def count (s1, s2):
-    count = 0
-    for i in range(len(s1)):
-        if s2 == s1[i]:
-            count += 1
-    return count
 
 s1 = 'qwertyert'
-s2 = 'ert'
-print(count(s1, s2))
+s2 = 'er'
+count = 0
+while len(s1) > 0 or i != -1:
+    i = s1.find(s2)
+    count += 1
+    i = s1.find(s2, i + 1)  
+print(count)
