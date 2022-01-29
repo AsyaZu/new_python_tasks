@@ -3,7 +3,7 @@
 # Позиции хранятся в файле file.txt в одной строке одно число
 from random import*
 
-with ('file.txt', 'w') as data:
+with open('file.txt', 'w') as data:
     data.write('0\n')
     data.write('1\n')
     data.write('2\n')
