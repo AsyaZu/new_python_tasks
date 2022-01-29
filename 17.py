@@ -10,12 +10,13 @@ with open('file.txt', 'w') as data:
 
 def array (n):
     list = [randrange(-n, n + 1) for i in range(n)]
+    print(list)
     data = open('file.txt', 'r')
     answer = 1
     for i in data:
         answer *= list[int(i)]
     data.close()
-    return list, answer
+    return answer
 
 print(array(10))
 
