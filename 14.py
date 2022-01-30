@@ -8,9 +8,9 @@ def sum (n):
         sum = sum + n1 % 10
         n1 = n1 // 10
     while n2 > 0:
-        n2 = n2 * 10
+        n2 = round(n2 * 10, 10)
         sum = sum + int(n2)
         n2 = n2 - int(n2)
     return sum
     
-print(sum(14.231))
+print(sum(141.23))
